@@ -1,4 +1,4 @@
-package app.bookquote
+package app.example
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
