@@ -14,11 +14,7 @@ plugins {
 dependencies {
   implementation("org.springframework.boot:spring-boot-starter-web")
   implementation("org.jetbrains.kotlin:kotlin-reflect")
-  implementation("com.github.demidko:telegram-storage:2022.05.30")
-  implementation("org.apache.commons:commons-csv:1.9.0")
-  implementation("org.apache.httpcomponents:httpclient:4.5.13")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
-  testImplementation("org.amshove.kluent:kluent:1.68")
   testImplementation("io.mockk:mockk:1.12.4")
 }
 version = "boot"
