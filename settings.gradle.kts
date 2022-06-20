@@ -5,4 +5,4 @@ pluginManagement {
     gradlePluginPortal()
   }
 }
-rootProject.name = "BookQuote"
+rootProject.name = rootProject.projectDir.name
