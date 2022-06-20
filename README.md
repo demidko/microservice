@@ -6,7 +6,7 @@ Kotlin microservice template produces self-executable jar application.
 
 
 1. Make sure you are signed in to your GitHub account, then just
-   click [`here`](https://github.com/demidko/psring-boot-service/generate) to use template.
+   click [`here`](https://github.com/demidko/spring-boot-service/generate) to use template.
 2. `App.kt` file is entry point.
 
 ## Build with Java
