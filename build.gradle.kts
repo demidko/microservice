@@ -24,11 +24,11 @@ dependencies {
 version = "boot"
 tasks.compileKotlin {
   kotlinOptions.jvmTarget = "18"
-  kotlinOptions.freeCompilerArgs += listOf("-opt-in=kotlin.time.ExperimentalTime", "-Xjsr305=strict", "-Xuse-k2")
+  kotlinOptions.freeCompilerArgs += listOf("-opt-in=kotlin.time.ExperimentalTime", "-Xjsr305=strict")
 }
 tasks.compileTestKotlin {
   kotlinOptions.jvmTarget = "18"
-  kotlinOptions.freeCompilerArgs += listOf("-opt-in=kotlin.time.ExperimentalTime", "-Xjsr305=strict", "-Xuse-k2")
+  kotlinOptions.freeCompilerArgs += listOf("-opt-in=kotlin.time.ExperimentalTime", "-Xjsr305=strict")
 }
 tasks.test {
   useJUnitPlatform()
