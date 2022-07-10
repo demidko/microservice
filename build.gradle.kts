@@ -7,9 +7,9 @@ repositories {
 plugins {
   id("io.spring.dependency-management") version "1.0.11.RELEASE"
   id("org.springframework.boot") version "3.0.0-SNAPSHOT"
-  kotlin("jvm") version "1.7.0"
-  kotlin("plugin.spring") version "1.7.0"
-  kotlin("plugin.serialization") version "1.7.0"
+  kotlin("jvm") version "1.7.10"
+  kotlin("plugin.spring") version "1.7.10"
+  kotlin("plugin.serialization") version "1.7.10"
 }
 dependencies {
   implementation("org.springframework.boot:spring-boot-starter-web")
