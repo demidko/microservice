@@ -17,7 +17,6 @@ dependencies {
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("io.mockk:mockk:1.12.4")
 }
-version = "boot"
 tasks.compileKotlin {
   kotlinOptions.jvmTarget = "18"
   kotlinOptions.freeCompilerArgs += listOf("-opt-in=kotlin.time.ExperimentalTime", "-Xjsr305=strict")
@@ -28,4 +27,7 @@ tasks.compileTestKotlin {
 }
 tasks.test {
   useJUnitPlatform()
+}
+tasks.bootJar {
+  archiveVersion.set("boot")
 }
