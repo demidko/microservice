@@ -9,8 +9,8 @@ repositories {
 plugins {
   id("org.springframework.boot") version "3.0.1"
   id("io.spring.dependency-management") version "1.1.0"
-  kotlin("jvm") version "1.7.22"
-  kotlin("plugin.spring") version "1.7.22"
+  kotlin("jvm") version "1.8.0"
+  kotlin("plugin.spring") version "1.8.0"
 }
 dependencies {
   implementation("org.springframework.boot:spring-boot-starter-web")
@@ -20,11 +20,12 @@ dependencies {
   testImplementation("io.mockk:mockk:1.13.2")
 }
 tasks.withType<KotlinCompile> {
-  kotlinOptions.jvmTarget = "17"
+  kotlinOptions.jvmTarget = "19"
   kotlinOptions.freeCompilerArgs += listOf("-opt-in=kotlin.time.ExperimentalTime", "-Xjsr305=strict")
 }
 tasks.test {
   useJUnitPlatform()
+  jvmArgs("--enable-preview")
 }
 tasks.bootJar {
   archiveVersion.set("boot")
