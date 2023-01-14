@@ -1,12 +1,12 @@
-# Spring Boot Service
+# Spring Boot Application
 
-Kotlin microservice template produces self-executable jar application.
+Template produces self-executable jar application with a web page (UI) at localhost.
 
 ## Usage
 
 1. Make sure you are signed in to your GitHub account, then just
-   click [`here`](https://github.com/demidko/spring-boot-service/generate) to use template.
-2. `App.kt` file is entry point.
+   click [`here`](https://github.com/demidko/application/generate) to use template.
+2. [`App.kt`](src/main/kotlin/app/example/App.kt) file is entry point.
 
 ## Build with Java
 
@@ -14,7 +14,7 @@ Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with
 Now you can run:
 
 ```shell
-java -jar --enable-preview build/application-boot.jar
+java -jar --enable-preview build/libs/application-boot.jar
 ```
 
 ## Or, build with Docker
