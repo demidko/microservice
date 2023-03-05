@@ -27,3 +27,15 @@ docker run -v `pwd`:`pwd` -w `pwd` -it --rm -p 80:8080 app
 ```
 
 Rest API will available at your [localhost](http://localhost/).
+
+## FYI
+
+If you specify, for example, the annotation
+
+```kotlin
+@Value("\${myCalendars.url:http://default-calendar.com}")
+lateinit var myCalendarUrl
+```
+
+then the value will be taken from the environment variable `MYCALENDAR_URL`. In addition, such a variable can also be
+set in the usual way, from the application.yml file or from command line parameters.
