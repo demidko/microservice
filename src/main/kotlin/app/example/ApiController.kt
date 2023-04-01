@@ -2,14 +2,14 @@ package app.example
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import java.util.concurrent.ExecutorService
+import java.lang.Thread.startVirtualThread
 
 @RestController
-class ApiController(private val executor: ExecutorService) {
+class ApiController {
 
   @GetMapping("/hello")
   fun hello(name: String) {
-    executor.execute {
+    startVirtualThread {
       println("/hello $name")
     }
   }

@@ -13,14 +13,10 @@ import java.util.concurrent.Executors.newVirtualThreadPerTaskExecutor
 @EnableAutoConfiguration
 class App {
 
-  @Bean
-  fun executor(): ExecutorService {
-    return newVirtualThreadPerTaskExecutor()
-  }
 
   @Bean
   fun controller(): ApiController {
-    return ApiController(executor())
+    return ApiController()
   }
 }
 

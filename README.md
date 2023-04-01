@@ -30,6 +30,8 @@ Rest API will available at your [localhost](http://localhost/).
 
 ## FYI
 
+### Spring Boot Params
+
 If you specify, for example, the annotation
 
 ```kotlin
@@ -39,3 +41,7 @@ lateinit var myCalendarUrl
 
 then the value will be taken from the environment variable `MYCALENDAR_URL`. In addition, such a variable can also be
 set in the usual way, from the application.yml file or from command line parameters.
+
+### Value classes
+
+You can use [multi-field value classes](https://github.com/zhelenskiy/KEEP/blob/patch-6/proposals/multi-field-value-classes.md) for your entities. 
