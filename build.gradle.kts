@@ -18,10 +18,16 @@ dependencies {
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("com.google.truth:truth:1.1.3")
   testImplementation("io.mockk:mockk:1.13.4")
+  testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 tasks.withType<KotlinCompile> {
   kotlinOptions.jvmTarget = "19"
-  kotlinOptions.freeCompilerArgs += listOf("-opt-in=kotlin.time.ExperimentalTime", "-Xjsr305=strict")
+  kotlinOptions.freeCompilerArgs += listOf(
+    "-Xjsr305=strict",
+    "-Xvalue-classes",
+    "-opt-in=kotlin.ExperimentalStdlibApi",
+    "-opt-in=kotlin.time.ExperimentalTime"
+  )
 }
 tasks.withType<JavaCompile> {
   sourceCompatibility = "19"
