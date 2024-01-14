@@ -1,6 +1,6 @@
-# Spring Boot Application
+# Microservice
 
-Template produces self-executable jar application with a web page (UI) at localhost.
+Template produces self-executable jar with API at localhost.
 
 ## Usage
 
