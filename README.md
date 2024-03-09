@@ -44,4 +44,11 @@ set in the usual way, from the application.yml file or from command line paramet
 
 ### Value classes
 
-You can use [multi-field value classes](https://github.com/zhelenskiy/KEEP/blob/patch-6/proposals/multi-field-value-classes.md) for your entities. 
+You can
+use [multi-field value classes](https://github.com/zhelenskiy/KEEP/blob/patch-6/proposals/multi-field-value-classes.md)
+for your entities.
+
+### TypeScript definitions in IntelliJ IDEA:
+
+You can download TypeScript definitions
+using [an intention action](https://www.jetbrains.com/help/webstorm/configuring-javascript-libraries.html#ws_js_configure_libraries_ts_definition_files).
