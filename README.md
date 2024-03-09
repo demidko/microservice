@@ -42,13 +42,13 @@ lateinit var myCalendarUrl
 then the value will be taken from the environment variable `MYCALENDAR_URL`. In addition, such a variable can also be
 set in the usual way, from the application.yml file or from command line parameters.
 
-### Value classes
+### Kotlin value classes
 
 You can
 use [multi-field value classes](https://github.com/zhelenskiy/KEEP/blob/patch-6/proposals/multi-field-value-classes.md)
 for your entities.
 
-### TypeScript definitions in IntelliJ IDEA:
+### Code completion for es6 imports in IntelliJ IDEA
 
-You can download TypeScript definitions
-using [an intention action](https://www.jetbrains.com/help/webstorm/configuring-javascript-libraries.html#ws_js_configure_libraries_ts_definition_files).
+You can download TypeScript definitions for es6 imports
+using [an intention action](https://www.jetbrains.com/help/webstorm/configuring-javascript-libraries.html#ws_js_configuring_libraries_ts_definition_files_download_procedure). 
