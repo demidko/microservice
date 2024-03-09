@@ -51,4 +51,5 @@ for your entities.
 ### Code completion for es6 imports in IntelliJ IDEA
 
 You can download TypeScript definitions for es6 imports
-using [an intention action](https://www.jetbrains.com/help/webstorm/configuring-javascript-libraries.html#ws_js_configuring_libraries_ts_definition_files_download_procedure). 
+using [an intention action](https://www.jetbrains.com/help/webstorm/configuring-javascript-libraries.html#ws_js_configuring_libraries_ts_definition_files_download_procedure).  
+ES6 imports example: [main.js](src/main/resources/public/main.js).
