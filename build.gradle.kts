@@ -17,8 +17,8 @@ dependencies {
   implementation("org.springframework.boot:spring-boot-starter-web")
   implementation("org.jetbrains.kotlin:kotlin-reflect")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
-  testImplementation("com.google.truth:truth:1.2.0")
-  testImplementation("io.mockk:mockk:1.13.4")
+  testImplementation("com.google.truth:truth:1.4.4")
+  testImplementation("io.mockk:mockk:1.13.12")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 java {
