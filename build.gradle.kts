@@ -30,9 +30,7 @@ kotlin {
     jvmTarget = JVM_21
     freeCompilerArgs.addAll(
       "-Xjsr305=strict",
-      "-Xvalue-classes",
-      "-opt-in=kotlin.ExperimentalStdlibApi",
-      "-opt-in=kotlin.time.ExperimentalTime"
+      "-Xvalue-classes"
     )
   }
 }
