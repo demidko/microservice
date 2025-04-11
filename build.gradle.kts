@@ -8,10 +8,10 @@ repositories {
   maven("https://repo.spring.io/snapshot")
 }
 plugins {
-  id("org.springframework.boot") version "3.4.2-SNAPSHOT"
+  id("org.springframework.boot") version "3.5.0-SNAPSHOT"
   id("io.spring.dependency-management") version "1.1.7"
-  kotlin("jvm") version "2.1.10"
-  kotlin("plugin.spring") version "2.1.10"
+  kotlin("jvm") version "2.1.20"
+  kotlin("plugin.spring") version "2.1.20"
 }
 dependencies {
   implementation("org.springframework.boot:spring-boot-starter-web")
