@@ -8,10 +8,10 @@ repositories {
   maven("https://repo.spring.io/snapshot")
 }
 plugins {
-  id("org.springframework.boot") version "3.5.0-SNAPSHOT"
+  id("org.springframework.boot") version "4.0.0-SNAPSHOT"
   id("io.spring.dependency-management") version "1.1.7"
-  kotlin("jvm") version "2.1.20"
-  kotlin("plugin.spring") version "2.1.20"
+  kotlin("jvm") version "2.2.0"
+  kotlin("plugin.spring") version "2.2.0"
 }
 dependencies {
   implementation("org.springframework.boot:spring-boot-starter-web")
@@ -30,12 +30,17 @@ kotlin {
     jvmTarget = JVM_21
     freeCompilerArgs.addAll(
       "-Xjsr305=strict",
+      "-Xannotation-default-target=param-property",
       "-Xvalue-classes"
     )
   }
 }
 tasks.test {
-  useJUnitPlatform()
+  useJUnitPlatform {
+    if (System.getProperties().containsKey("idea.version").not()) {
+      excludeTags("ideaOnly")
+    }
+  }
   jvmArgs("--enable-preview")
 }
 tasks.bootJar {
