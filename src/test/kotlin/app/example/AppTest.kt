@@ -1,7 +1,7 @@
 package app.example
 
-import app.example.annotations.ManualTest
 import com.google.common.truth.Truth.assertThat
+import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
@@ -19,7 +19,7 @@ class AppTest {
   }
 
   @Test
-  @ManualTest
+  @Tag("manual")
   fun manualTest() {
     throw RuntimeException()
   }
