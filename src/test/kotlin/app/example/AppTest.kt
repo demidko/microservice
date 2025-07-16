@@ -1,8 +1,7 @@
 package app.example
 
+import app.example.annotations.ManualTest
 import com.google.common.truth.Truth.assertThat
-import org.junit.jupiter.api.Assertions.*
-import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
@@ -20,8 +19,8 @@ class AppTest {
   }
 
   @Test
-  @Tag("ideaOnly")
-  fun testOnlyInIdea() {
-
+  @ManualTest
+  fun manualTest() {
+    throw RuntimeException()
   }
 }

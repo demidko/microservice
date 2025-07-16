@@ -38,7 +38,7 @@ kotlin {
 tasks.test {
   useJUnitPlatform {
     if (System.getProperties().containsKey("idea.version").not()) {
-      excludeTags("ideaOnly")
+      excludeTags("manual")
     }
   }
   jvmArgs("--enable-preview")
