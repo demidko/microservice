@@ -8,6 +8,12 @@ Template produces self-executable jar with API at localhost.
    click [`here`](https://github.com/demidko/application/generate) to use template.
 2. [`App.kt`](src/main/kotlin/app/example/App.kt) file is entry point.
 
+## Run with Makefile
+
+```shell
+make
+```
+
 ## Build with Java
 
 Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with `-boot.jar` postfix.
