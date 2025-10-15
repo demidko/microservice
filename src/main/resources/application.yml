@@ -1,3 +1,5 @@
-server.compression.enabled: true
 server.http2.enabled: true
+spring.sql.init.mode: always
+server.compression.enabled: true
+server.error.include-message: always
 spring.threads.virtual.enabled: true

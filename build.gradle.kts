@@ -10,16 +10,17 @@ repositories {
 plugins {
   id("org.springframework.boot") version "4.0.0-SNAPSHOT"
   id("io.spring.dependency-management") version "1.1.7"
-  kotlin("jvm") version "2.2.0"
-  kotlin("plugin.spring") version "2.2.0"
+  kotlin("jvm") version "2.2.20"
+  kotlin("plugin.spring") version "2.2.20"
 }
 dependencies {
-  implementation("org.springframework.boot:spring-boot-starter-web")
   implementation("org.jetbrains.kotlin:kotlin-reflect")
-  testImplementation("org.springframework.boot:spring-boot-starter-test")
-  testImplementation("com.google.truth:truth:1.4.4")
+  implementation("org.springframework.boot:spring-boot-starter-web")
+  implementation("org.springframework.boot:spring-boot-starter-jdbc")
   testImplementation("io.mockk:mockk:1.13.14")
+  testImplementation("com.google.truth:truth:1.4.4")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+  testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 java {
   sourceCompatibility = VERSION_21
