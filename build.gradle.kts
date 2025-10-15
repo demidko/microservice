@@ -1,5 +1,6 @@
-import org.gradle.api.JavaVersion.VERSION_21
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
+import org.gradle.api.JavaVersion.VERSION_24
+import org.gradle.api.JavaVersion.VERSION_25
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24
 
 repositories {
   mavenCentral()
@@ -24,12 +25,12 @@ dependencies {
   testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 java {
-  sourceCompatibility = VERSION_21
-  targetCompatibility = VERSION_21
+  sourceCompatibility = VERSION_25
+  targetCompatibility = VERSION_24
 }
 kotlin {
   compilerOptions {
-    jvmTarget = JVM_21
+    jvmTarget = JVM_24
     freeCompilerArgs.addAll(
       "-Xjsr305=strict",
       "-Xannotation-default-target=param-property",

@@ -1,4 +1,4 @@
-FROM gradle:jdk21 as builder
+FROM gradle:jdk25 as builder
 WORKDIR /project
 COPY src ./src
 COPY build.gradle.kts ./build.gradle.kts
