@@ -16,7 +16,8 @@ plugins {
 dependencies {
   implementation("org.jetbrains.kotlin:kotlin-reflect")
   implementation("org.springframework.boot:spring-boot-starter-web")
-  implementation("org.springframework.boot:spring-boot-starter-jdbc")
+  // for schema.sql auto initialization:
+  //  implementation("org.springframework.boot:spring-boot-starter-jdbc")
   testImplementation("io.mockk:mockk:1.13.14")
   testImplementation("com.google.truth:truth:1.4.4")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
