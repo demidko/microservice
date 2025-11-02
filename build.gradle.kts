@@ -1,6 +1,5 @@
-import org.gradle.api.JavaVersion.VERSION_24
 import org.gradle.api.JavaVersion.VERSION_25
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_24
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_25
 
 repositories {
   mavenCentral()
@@ -11,8 +10,8 @@ repositories {
 plugins {
   id("org.springframework.boot") version "4.0.0-SNAPSHOT"
   id("io.spring.dependency-management") version "1.1.7"
-  kotlin("jvm") version "2.2.20"
-  kotlin("plugin.spring") version "2.2.20"
+  kotlin("jvm") version "2.3.0-Beta2"
+  kotlin("plugin.spring") version "2.3.0-Beta2"
 }
 dependencies {
   implementation("org.jetbrains.kotlin:kotlin-reflect")
@@ -26,11 +25,11 @@ dependencies {
 }
 java {
   sourceCompatibility = VERSION_25
-  targetCompatibility = VERSION_24
+  targetCompatibility = VERSION_25
 }
 kotlin {
   compilerOptions {
-    jvmTarget = JVM_24
+    jvmTarget = JVM_25
     freeCompilerArgs.addAll(
       "-Xjsr305=strict",
       "-Xannotation-default-target=param-property",
