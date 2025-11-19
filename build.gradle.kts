@@ -10,8 +10,8 @@ repositories {
 plugins {
   id("org.springframework.boot") version "4.0.0-SNAPSHOT"
   id("io.spring.dependency-management") version "1.1.7"
-  kotlin("jvm") version "2.3.0-Beta2"
-  kotlin("plugin.spring") version "2.3.0-Beta2"
+  kotlin("jvm") version "2.3.0-RC"
+  kotlin("plugin.spring") version "2.3.0-RC"
 }
 dependencies {
   implementation("org.jetbrains.kotlin:kotlin-reflect")
