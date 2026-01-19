@@ -8,18 +8,18 @@ repositories {
   maven("https://repo.spring.io/snapshot")
 }
 plugins {
-  id("org.springframework.boot") version "4.0.0-SNAPSHOT"
+  id("org.springframework.boot") version "4.1.0-SNAPSHOT"
   id("io.spring.dependency-management") version "1.1.7"
-  kotlin("jvm") version "2.3.0-RC"
-  kotlin("plugin.spring") version "2.3.0-RC"
+  kotlin("jvm") version "2.3.20-Beta1"
+  kotlin("plugin.spring") version "2.3.20-Beta1"
 }
 dependencies {
-  implementation("org.jetbrains.kotlin:kotlin-reflect")
   implementation("org.springframework.boot:spring-boot-starter-web")
+  implementation("org.jetbrains.kotlin:kotlin-reflect")
   // for schema.sql auto initialization:
   //  implementation("org.springframework.boot:spring-boot-starter-jdbc")
-  testImplementation("io.mockk:mockk:1.13.14")
-  testImplementation("com.google.truth:truth:1.4.4")
+  testImplementation("io.mockk:mockk:1.14.7")
+  testImplementation("com.google.truth:truth:1.4.5")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
